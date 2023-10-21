@@ -9,10 +9,10 @@ const auth = require("./middleware/authMiddleware")
 app.use(cors())
 app.use(express.json())
 
-// app.get("/",(req,res)=>{
-//     res.send("welcome to The Recipe Api")
-//     console.log("welcome to The Recipe Api")
-// })
+app.get("/",(req,res)=>{
+    res.send("welcome to The Recipe Api")
+    console.log("welcome to The Recipe Api")
+})
 
 
 app.use("/user",userRouter)
